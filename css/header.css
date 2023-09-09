@@ -1,0 +1,114 @@
+@import "common.css";
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    margin: 0 auto;
+    height: 80px;
+    z-index: 10;
+}
+
+
+.nav-link {
+    display: inline-block;
+    color: gray;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    margin: 0 20px;
+}
+
+.nav-link:hover {
+    color: black;
+    transform: scale(1.1);
+}
+
+.active {
+    color: black;
+}
+
+
+.btn-nav, .btn-nav-2{
+    display: inline-block;
+    background-color: var(--green-color);
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    padding: 12px 23px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-nav{
+    display: none;
+    width: 100%;
+}
+
+.btn-nav:hover, .btn-nav-2:hover {
+    transform: scale(1.05);
+}
+
+.menu {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+@media screen and (max-width: 800px) {
+    .btn-nav-2{
+        display: none;
+    }
+
+    nav{
+        display: none;
+        position: absolute;
+        border-top: 1px solid rgb(228, 228, 228);
+        top: 5rem;
+        left: 0;
+        width: 100%;
+        padding: 0 5%;
+        background-color: rgba(255, 255, 255);
+        padding-bottom: 4rem;
+
+    }
+
+    .nav-link {
+        display: block;
+        margin: 3rem 0;
+    }
+    .nav-link:hover {
+        transform: scale(1);
+    }
+    
+    .btn-nav{
+        display: block;
+    }
+    .menu{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(209, 209, 209);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    }
+
+    .menu span {
+        font-size: 1.5rem;
+    }
+    
+}

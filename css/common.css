@@ -1,0 +1,16 @@
+
+:root {
+  --green-color: #04DDB2;
+  --font-footer-color: rgb(82, 82, 82);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+

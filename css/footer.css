@@ -1,0 +1,66 @@
+@import "common.css";
+
+footer {
+    border-top: 1px solid rgb(200, 200, 200);
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 5rem 5rem 10rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+}
+
+footer div {
+    margin: 1rem;
+    min-width: 120px;
+}
+
+
+footer > div:first-child p{
+    margin-top: 1rem;
+    color: var(--font-footer-color);
+}
+
+.central-div a {
+    color: var(--font-footer-color);
+    display: block;
+    text-decoration: none;
+    margin-top: 1.1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.central-div p {
+    font-weight: 700;
+}
+.central-div a:hover{
+    transform: scale(1.05);
+}
+
+
+.div-icons img {
+    transition: all 0.1s linear;
+    margin-right: 1rem;
+    transform: scale(1.2);
+}
+
+.div-icons img:hover {    
+    transform: scale(1.3);
+}
+
+@media screen and (max-width: 800px) {
+    footer {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .div-icons img {
+        display: block;
+        margin-top: 1rem;
+    }
+}
+
+
