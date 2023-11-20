@@ -4,6 +4,7 @@ const modal = document.getElementById("modal");
 const closeBtn = document.getElementById("close");
 const menuIcon = document.getElementById("menu-icon");
 const navTab = document.getElementById("nav");
+const video = document.getElementById("video");
 
 
 menuIcon.addEventListener("click", ()=>{
@@ -12,6 +13,7 @@ menuIcon.addEventListener("click", ()=>{
 
 
 function closeModal() {
+    video.src = "https://www.youtube.com/embed/Mdcw3Sb98DA?si=_dv8Nqsxt8myYEEX";
     modal.style.display = "none";
 }
 
